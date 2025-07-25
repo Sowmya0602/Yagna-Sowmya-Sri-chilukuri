@@ -1,91 +1,50 @@
 
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yagna Sowmya Sri | Data Engineer</title>
+  <title>Yagna Sowmya Sri | Data Engineer with ML Integration</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1><i class="fas fa-user-astronaut"></i> Yagna Sowmya Sri</h1>
-    <p>Data Wrangler | Cloud Builder | Certified Pipeline Whisperer</p>
-    <button id="theme-toggle">Toggle Theme</button>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Yagna Sowmya Sri</h1>
+      <h2>Data Engineer with ML Integration</h2>
+      <p>Turning raw data into real business value using AWS, Azure, Spark, Kafka, and ML-powered pipelines.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
 
-  <main data-scroll-container>
-    <section id="about" data-scroll-section>
-      <h2>About Me <i class="fas fa-id-card"></i></h2>
-      <p>I’ve been turning raw, messy data into clean, business-changing insights using scalable cloud platforms...</p>
-    </section>
+  <section class="projects" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>LinkedIn Profile Optimization</h3>
+        <p>Shiny app that analyzes and improves LinkedIn profiles using data-driven recommendations.</p>
+        <a href="https://github.com/Sowmya0602/Linkedin-Profile-Optimization" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="project-card">
+        <h3>Loan Approval Prediction</h3>
+        <p>Built using XGBoost, Random Forest, and a front-end for fast loan approval decisions.</p>
+        <a href="https://github.com/Sowmya0602/Loan-Approval-Prediction" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="education" data-scroll-section>
-      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-      <ul>
-        <li>Masters in Data Science - Western Michigan University (2025 - Present)</li>
-        <li>B.Tech in Information Technology - Vignan Institute, Hyderabad</li>
-      </ul>
-    </section>
+  <section class="resume" id="resume">
+    <h2>Resume</h2>
+    <a href="assets/resume.pdf" class="btn" download>Download PDF</a>
+  </section>
 
-    <section id="experience" data-scroll-section>
-      <h2><i class="fas fa-briefcase"></i> Experience</h2>
-      <article>
-        <h3>Data Engineer @ Chime</h3>
-        <p>Oct 2024 – Present | AWS, Spark, Kafka, ML Integration</p>
-      </article>
-      <article>
-        <h3>Data Engineer @ MSD</h3>
-        <p>Jan 2021 – Jul 2023 | Azure, ETL, Data Governance</p>
-      </article>
-    </section>
-
-    <section id="projects" data-scroll-section>
-      <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-      <ul>
-        <li>Loan Approval Prediction - XGBoost, UI App</li>
-        <li>Heart Failure Detection - CNN, Tkinter</li>
-        <li>Stock Price Prediction - Regression, Pandas</li>
-        <li>IoT Talking Bot - Arduino, Voice Synth</li>
-      </ul>
-    </section>
-
-    <section id="skills" data-scroll-section>
-      <h2><i class="fas fa-tools"></i> Skills</h2>
-      <p>Python, SQL, Spark, Kafka, AWS, Azure, ML, Power BI, Tableau</p>
-    </section>
-
-    <section id="resume" data-scroll-section>
-      <h2><i class="fas fa-file-alt"></i> Resume</h2>
-      <a href="assets/resume.pdf" download>Download Resume (PDF)</a>
-    </section>
-
-    <section id="contact" data-scroll-section>
-      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-      <form action="https://formspree.io/f/xzbldrgk" method="POST">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <script src="assets/js/theme-toggle.js"></script>
-  <script>
-    const scroll = new LocomotiveScroll({ el: document.querySelector("[data-scroll-container]"), smooth: true });
-    gsap.from("header", { opacity: 0, y: -50, duration: 1 });
-  </script>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:chilukuri@workwebmail.com">chilukuri@workwebmail.com</a></p>
+    <p>Phone: <a href="tel:+12698706066">(269) 870-6066</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yagna-sowmya-sri-chilukuri-18355b283/" target="_blank">Profile ↗</a></p>
+    <p>GitHub: <a href="https://github.com/Sowmya0602" target="_blank">Sowmya0602</a></p>
+  </section>
 </body>
 </html>
